@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlackTop Random</title>
+</head>
+<body>
+<div>
+<h1>Team 1:</h1>
+
+<div>
+<table>
+<tr>
+    <th>Team</th>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Overall</th>
+
+
+</tr>
+{% for player in team1 %}
+    <tr>
+        <th>{{ player.team }}</th>
+        <th>{{ player.name }}</th>
+        <th>{{ player.pos }}</th>
+        <th> {{ player.ovr }}</th>
+
+    </tr>
+{% endfor %}
+
+
+</table>
+</div>
+
+
+</div>
+
+<div>
+<h1>Team 2:</h1>
+
+
+<div>
+    <table>
+<tr>
+    <th>Team</th>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Overall</th>
+
+
+</tr>
+{% for player in team2 %}
+    <tr>
+        <th>{{ player.team }}</th>
+        <th>{{ player.name }}</th>
+        <th>{{ player.pos }}</th>
+        <th> {{ player.ovr }}</th>
+
+    </tr>
+{% endfor %}
+
+
+</table>
+</div>
+
+
+</div>
+</body>
+</html>
